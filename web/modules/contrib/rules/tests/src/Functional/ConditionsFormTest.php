@@ -242,7 +242,7 @@ class ConditionsFormTest extends RulesBrowserTestBase {
           'user' => '@user.current_user_context:current_user',
         ],
       ],
-      'Uer has role' => [
+      'User has role' => [
         'rules_user_has_role',
         [
           'user' => '@user.current_user_context:current_user',
