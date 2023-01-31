@@ -1,0 +1,26 @@
+diff --git a/src/Core/RulesActionBase.php b/src/Core/RulesActionBase.php
+index 28267b7..ab3acbb 100644
+--- a/src/Core/RulesActionBase.php
++++ b/src/Core/RulesActionBase.php
+@@ -136,7 +136,7 @@ abstract class RulesActionBase extends ContextAwarePluginBase implements RulesAc
+     foreach ($this->getContextDefinitions() as $name => $definition) {
+       $args[$name] = $this->getContextValue($name);
+     }
+-    call_user_func_array([$this, 'doExecute'], $args);
++    call_user_func_array([$this, 'doExecute'], array_values($args));
+   }
+ 
+ }
+diff --git a/src/Core/RulesConditionBase.php b/src/Core/RulesConditionBase.php
+index 3f23949..63b68be 100644
+--- a/src/Core/RulesConditionBase.php
++++ b/src/Core/RulesConditionBase.php
+@@ -67,7 +67,7 @@ abstract class RulesConditionBase extends ConditionPluginBase implements RulesCo
+     foreach ($this->getContextDefinitions() as $name => $definition) {
+       $args[$name] = $this->getContextValue($name);
+     }
+-    return call_user_func_array([$this, 'doEvaluate'], $args);
++    return call_user_func_array([$this, 'doEvaluate'], array_values($args));
+   }
+ 
+ }

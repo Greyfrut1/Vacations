@@ -1,0 +1,12 @@
+name: 'Rules User Fields'
+type: module
+description: 'Enables to get access to all fields (including custom) of User entity from Rules.'
+core_version_requirement: ^9
+package: 'Rules'
+dependencies:
+  - rules:rules
+
+# Information added by Drupal.org packaging script on 2021-07-08
+version: '2.0.1'
+project: 'rules_user_fields'
+datestamp: 1625785604

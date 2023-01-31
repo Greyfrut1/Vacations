@@ -1,0 +1,22 @@
+{
+  "name": "drupal/rules_user_fields",
+  "description": "Enables to get access to all fields (including custom) of User entity from Rules.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "homepage": "https://www.drupal.org/project/rules_user_fields",
+  "authors": [
+    {
+      "name": "Andrey Vitushkin (wombatbuddy)",
+      "homepage": "https://www.drupal.org/u/wombatbuddy",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/rules_user_fields",
+    "source": "https://git.drupalcode.org/project/rules_user_fields"
+  },
+  "require": {
+    "drupal/core": "^9"
+  }
+}
